@@ -1,0 +1,40 @@
+<<<<<<< .mine
+#BlueJ class context
+comment0.target=PersonController
+comment1.params=name\ address\ postalCode\ city\ phone
+comment1.target=model.Person\ createPerson(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=id
+comment2.target=model.Person\ getPerson(int)
+comment3.params=p\ name\ address\ postalCode\ city\ phone
+comment3.target=model.Person\ updatePerson(model.Person,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=p
+comment4.target=model.Person\ deletePerson(model.Person)
+comment5.params=p
+comment5.target=java.util.HashMap\ getLoans(model.Person)
+numComments=6
+||||||| .r62
+#BlueJ class context
+comment0.target=PersonController
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PersonController\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=id\ name\ address\ postalCode\ city\ phone
+comment1.target=model.Person\ createPerson(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=id
+comment2.target=model.Person\ getPerson(int)
+comment3.params=id\ p
+comment3.target=model.Person\ updatePerson(int,\ model.Person)
+numComments=4
+=======
+#BlueJ class context
+comment0.target=PersonController
+comment1.params=name\ address\ postalCode\ city\ phone
+comment1.target=model.Person\ createPerson(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=id
+comment2.target=model.Person\ getPerson(int)
+comment3.params=p\ name\ address\ postalCode\ city\ phone
+comment3.target=model.Person\ updatePerson(model.Person,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=p
+comment4.target=model.Person\ deletePerson(model.Person)
+comment5.params=p
+comment5.target=java.util.HashMap\ getLoans(model.Person)
+numComments=6
+>>>>>>> .r64

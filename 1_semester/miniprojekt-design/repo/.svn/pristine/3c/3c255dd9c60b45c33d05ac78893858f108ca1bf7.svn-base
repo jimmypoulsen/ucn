@@ -1,0 +1,75 @@
+package tui;
+import controller.*;
+import model.*;
+
+public final class PersonUI {
+  private PersonUI() {
+    throw new UnsupportedOperationException();
+  }
+
+  public static void addPerson() {
+    PersonController pCtrl = new PersonController();
+
+    String name = Helper.readInput("Enter name");
+    String address = Helper.readInput("Enter address");
+    String postalCode = Helper.readInput("Enter postal code");
+    String city = Helper.readInput("Enter city");
+    String phone = Helper.readInput("Enter phone number");
+    Person p = pCtrl.createPerson(name, address, postalCode, city, phone);
+
+    System.out.println("Person added!");
+  }
+
+  public static void findPerson() {
+    PersonController pCtrl = new PersonController();
+
+    int id = Helper.readInt("Enter the person's id");
+    Person p = pCtrl.getPerson(id);
+
+    if(p != null)
+      System.out.println(p);
+    else
+      System.out.println("Person not found!");
+  }
+
+  public static void updatePerson() {
+    PersonController pCtrl = new PersonController();
+    String res;
+    int id = Helper.readInt("Enter the person's id");
+    Person p = pCtrl.getPerson(id);
+
+    if(p != null) {
+      String name = Helper.readInput("Enter new name");
+      String address = Helper.readInput("Enter new address");
+      String postalCode = Helper.readInput("Enter new postal code");
+      String city = Helper.readInput("Enter new city");
+      String phone = Helper.readInput("Enter new phone number");
+
+      if(!Helper.checkEmptyInput(name))
+        p.setName(name);
+      if(!Helper.checkEmptyInput(address))
+        p.setAddress(address);
+      if(!Helper.checkEmptyInput(postalCode))
+        p.setPostalCode(postalCode);
+      if(!Helper.checkEmptyInput(city))
+        p.setCity(city);
+      if(!Helper.checkEmptyInput(phone))
+        p.setPhone(phone);
+      res = "The person was updated!";
+    } else
+      res = "Person was not found!";
+
+    System.out.println(res);
+  }
+
+  public static void deletePerson() {
+    PersonController pCtrl = new PersonController();
+
+    int id = Helper.readInt("Enter the person's id");
+    Person p = pCtrl.getPerson(id);
+
+    pCtrl.deletePerson(p);
+
+    System.out.println(p.getName() + " was deleted!");
+  }
+}

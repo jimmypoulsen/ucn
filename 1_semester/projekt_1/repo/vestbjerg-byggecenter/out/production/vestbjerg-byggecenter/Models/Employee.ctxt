@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Employee
+comment1.params=firstName\ lastName\ cpr\ phone\ address\ zip\ city\ employeeNo\ password\ accessLevel\ title
+comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=Branch\ getBranch()
+comment2.params=employeeNo
+comment2.target=void\ setEmployeeNo(int)
+comment3.params=
+comment3.target=int\ getEmployeeNo()
+comment4.params=password
+comment4.target=void\ setPassword(java.lang.String)
+comment5.params=accessLevel
+comment5.target=void\ setAccessLevel(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getAccessLevel()
+comment7.params=title
+comment7.target=void\ setTitle(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getTitle()
+comment9.params=b
+comment9.target=void\ setBranch(Branch)
+numComments=11

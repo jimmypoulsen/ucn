@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TextInput
+comment0.text=\r\n\ Description\ of\ TextInput\ goes\ here.\r\n\ \r\n\ @author\ Istvan\ Knoll,\ Mogens\ Holm\ Iversen\r\n\ @version\ 0.0.1\ initial\ draft\ version\r\n
+comment1.params=
+comment1.target=TextInput()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ TextInput\r\n
+comment2.params=question
+comment2.target=int\ inputNumber(java.lang.String)
+comment3.params=question
+comment3.target=java.lang.String\ inputString(java.lang.String)
+comment4.params=question
+comment4.target=void\ printQuesiton(java.lang.String)
+numComments=5

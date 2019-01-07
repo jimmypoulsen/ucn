@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Sale
+comment1.params=paymentType\ employee
+comment1.target=Sale(PaymentType,\ Employee)
+comment10.params=total
+comment10.target=void\ setTotal(double)
+comment11.params=
+comment11.target=Employee\ getEmployee()
+comment12.params=employee
+comment12.target=void\ setEmployee(Employee)
+comment2.params=salesLine
+comment2.target=boolean\ addSalesLine(SalesLine)
+comment3.params=
+comment3.target=PaymentType\ getPaymentType()
+comment4.params=paymentType
+comment4.target=void\ setPaymentType(PaymentType)
+comment5.params=
+comment5.target=java.util.Date\ getDate()
+comment6.params=date
+comment6.target=void\ setDate(java.util.Date)
+comment7.params=
+comment7.target=OrderState\ getState()
+comment8.params=state
+comment8.target=void\ setState(OrderState)
+comment9.params=
+comment9.target=double\ getTotal()
+numComments=13

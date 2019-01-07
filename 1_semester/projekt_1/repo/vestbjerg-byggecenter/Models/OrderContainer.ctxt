@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=OrderContainer
+comment1.params=
+comment1.target=OrderContainer()
+comment2.params=
+comment2.target=OrderContainer\ getInstance()
+comment3.params=o
+comment3.target=Order\ addOrder(Order)
+comment4.params=o\ oL
+comment4.target=Order\ addOrderLine(Order,\ OrderLine)
+comment5.params=o\ total
+comment5.target=Order\ setOrderTotal(Order,\ double)
+comment6.params=
+comment6.target=java.util.HashMap\ findAllOrders()
+comment7.params=
+comment7.target=int\ getLastOrderId()
+numComments=8

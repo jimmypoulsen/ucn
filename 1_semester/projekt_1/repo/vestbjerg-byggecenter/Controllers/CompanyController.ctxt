@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=CompanyController
+comment1.params=name\ cvr\ address\ zip\ city\ primary
+comment1.target=Models.Company\ createCompany(java.lang.String,\ long,\ java.lang.String,\ int,\ java.lang.String,\ Models.Customer)
+numComments=2

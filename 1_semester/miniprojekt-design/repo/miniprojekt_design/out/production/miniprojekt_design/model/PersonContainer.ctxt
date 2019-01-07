@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PersonContainer
+comment1.params=
+comment1.target=PersonContainer()
+comment2.params=
+comment2.target=PersonContainer\ getInstance()
+comment3.params=p
+comment3.target=boolean\ addPerson(Person)
+comment4.params=id
+comment4.target=Person\ findPerson(int)
+comment5.params=
+comment5.target=java.util.HashMap\ findAll()
+comment6.params=id
+comment6.target=Person\ deletePerson(int)
+comment7.params=
+comment7.target=int\ getLastPersonId()
+comment8.params=p
+comment8.target=java.util.HashMap\ findAllLoans(Person)
+numComments=9

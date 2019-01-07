@@ -1,0 +1,26 @@
+package Controllers;
+
+import Models.*;
+import java.util.HashMap;
+
+public class OrderController {
+    public Order createOrder(Order o, PaymentType pt) {
+        o.setPaymentType(pt);
+        o.setDelivery(true);
+        o.setState(OrderState.COMPLETED);
+        OrderContainer.getInstance().addOrder(o);
+        return o;
+    }
+    
+    public Order newOrder(Customer c) {
+        SessionsController sCtrl = new SessionsController();
+        int id = OrderContainer.getInstance().getLastOrderId() + 1;
+        Order o = new Order(id, OrderState.PENDING, c, sCtrl.getCurrentLoggedInEmployee());
+        return o;
+    }
+    
+    public HashMap<Integer, Order> getOrders() {
+        return OrderContainer.getInstance().findAllOrders();
+    }
+}
+

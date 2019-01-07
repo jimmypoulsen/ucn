@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ItemCopy
+comment1.params=serialNo\ condition
+comment1.target=ItemCopy(java.lang.String,\ int)
+comment2.params=serialNo
+comment2.target=void\ setSerialNo(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getSerialNo()
+comment4.params=condition
+comment4.target=void\ setCondition(int)
+comment5.params=
+comment5.target=int\ getCondition()
+numComments=6

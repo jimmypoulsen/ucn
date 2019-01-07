@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CustomerController
+comment1.params=firstName\ lastName\ cpr\ phone\ address\ city\ zip\ type
+comment1.target=Models.Customer\ createCustomer(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=c\ co
+comment2.target=boolean\ setCompany(Models.Customer,\ Models.Company)
+comment3.params=customerNo
+comment3.target=Models.Customer\ getCustomer(int)
+comment4.params=
+comment4.target=java.util.HashMap\ getCustomers()
+numComments=5

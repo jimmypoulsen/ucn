@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=LoanContainer
+comment1.params=
+comment1.target=LoanContainer()
+comment10.params=l
+comment10.target=boolean\ deactivateLoan(Loan)
+comment11.params=
+comment11.target=int\ getLastLoanId()
+comment2.params=
+comment2.target=LoanContainer\ getInstance()
+comment3.params=l
+comment3.target=boolean\ addLoan(Loan)
+comment4.params=id
+comment4.target=Loan\ findLoan(int)
+comment5.params=
+comment5.target=java.util.HashMap\ findAll()
+comment6.params=
+comment6.target=java.util.HashMap\ findAllActive()
+comment7.params=
+comment7.target=java.util.HashMap\ findAllInActive()
+comment8.params=id
+comment8.target=Loan\ deleteLoan(int)
+comment9.params=l
+comment9.target=boolean\ activateLoan(Loan)
+numComments=12

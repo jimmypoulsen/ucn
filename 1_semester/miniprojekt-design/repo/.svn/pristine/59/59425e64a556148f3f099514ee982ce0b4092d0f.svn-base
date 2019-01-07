@@ -1,0 +1,87 @@
+package tui;
+import controller.*;
+import model.*;
+
+public class MainMenuUI {
+    public static void main(String args[]) {
+        new MainMenuUI().start();
+    }
+
+    private void start() {
+        boolean run = true;
+
+        while(run) {
+            String command = Helper.readInput("What is your command?");
+            switch(command.toLowerCase()) {
+                case "exit":
+                case "quit":
+                case "q":
+                    run = false;
+                    break;
+                case "add person":
+                    PersonUI.addPerson();
+                    break;
+                case "find person":
+                    PersonUI.findPerson();
+                    break;
+                case "update person":
+                    PersonUI.updatePerson();
+                    break;
+                case "delete person":
+                    PersonUI.deletePerson();
+                    break;
+                case "add dvd":
+                    DVDUI.addDVD();
+                    break;
+                case "find dvd":
+                    DVDUI.findDVD();
+                    break;
+                case "update dvd":
+                    DVDUI.updateDVD();
+                    break;
+                case "delete dvd":
+                    DVDUI.deleteDVD();
+                    break;
+                case "add dvd copy":
+                    DVDUI.addDVDCopy();
+                    break;
+                case "delete dvd copy":
+                    DVDUI.deleteDVDCopy();
+                    break;
+                case "test me":
+                    runTests();
+                    break;
+                default:
+                    System.out.println("Command not recognized.. Try again!");
+            }
+        }
+        System.out.println("System terminated...");
+    }
+
+    private void runTests() {
+        PersonController pCtrl = new PersonController();
+
+        // 1: Create a new person
+        System.out.println("Creating two new persons ...");
+        Person p0 = pCtrl.createPerson("Peter Madsen", "Herstedvester Fængsel", "2000", "København", "112");
+        Person p1 = pCtrl.createPerson("Kongen", "KONGEN", "2000", "København", "112");
+        System.out.println(p0.getName() + " with an ID of " + p0.getId() + " was successfully created");
+        System.out.println(p1.getName() + " with an ID of " + p1.getId() + " was successfully created");
+
+        // 2: Update person
+        System.out.println("Updating that person ...");
+        //p0 = pCtrl.updatePerson(new Person(p0.getId(), "Peter Lundin", "Horsens Statsfængsel", "2000", "Horsens", "112"));
+        p0 = pCtrl.updatePerson(p0, "Jimmy", "asasd", "asdasd", "asdasdasd", "asdasd");
+        System.out.println("Person with ID of " + p0.getId() + " is now named " + p0.getName() + "!");
+
+        // 3: Get a person
+        System.out.println("Get person with an ID of 1");
+        Person p2 = pCtrl.getPerson(1);
+        System.out.println("Person by the name of " + p2.getName() + " was found ...");
+
+        // 4: Delete a person
+        System.out.println("Deleting person with an ID of " + p1.getId());
+        p1 = pCtrl.deletePerson(p1);
+        System.out.println(p1.getName() + " was deleted!");
+    }
+}

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SalesLine
+comment1.params=quantity\ subtotal
+comment1.target=SalesLine(int,\ double)
+comment2.params=quantity
+comment2.target=void\ setQuantity(int)
+comment3.params=
+comment3.target=int\ getQuantity()
+comment4.params=subtotal
+comment4.target=void\ setSubtotal(double)
+comment5.params=
+comment5.target=double\ getSubtotal()
+numComments=6

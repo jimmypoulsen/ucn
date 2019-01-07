@@ -1,0 +1,24 @@
+Game class
+	- The game class created and initializes all other classes. It creates all the different room, assign the relevant exits, creates the parser and starts the game.
+	- It also evaluates and executes the commands that the parser returns.
+
+Room class
+	- Each instance of the room class represents one location in the scenery of the game.
+	- Each room is connected to other rooms through exits.
+	- Exits are labelled north, south, east, and west. For each direction the room stores a reference to the neighbor room, or null if there is no exit in that direction.
+
+Command class
+	- The command class holds information about the command that was issued by the user.
+	- A command consists of two strings: a command word and a second word, eg: `go west`. `go` is the command word, and `west` is the second word.
+	- When commands go through the command class they are already marked as valid. If the user enters an invalid command, then the command word is <null>.
+	- Also, if the command only has one word, then the second word would be <null>.
+
+CommandWords class
+	- The commandwords class holds an enumeration of all available command words.
+	- The class is used to recognize commands as they are typed in.
+
+Parser class
+	- The parser class reads the user's input and tries to interpret it as a command.
+	- Every time it is called it reads a line from the terminal and tries to interpret the line as a two word command.
+	- It returns the command as an object of class Command.
+	- The parser has a particular set of known command words. It checks user input against known commands, and if the input is not one of the known commands, it returns a command object that is marked as an unknown command. 

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=CDMenu
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Menu\ here.\r\n\ \r\n\ @author\ Kis\ Boisen\ Hansen,\ knol,\ mhi\r\n\ @version\ 2010.04.08,\ 2012.04.10,\ 2015.11.01,\ 2018.10.19\r\n
+comment1.params=
+comment1.target=CDMenu()
+comment2.params=
+comment2.target=void\ cdMenuStart()
+comment3.params=
+comment3.target=int\ writeCDMenu()
+comment4.params=
+comment4.target=void\ startCD()
+comment5.params=
+comment5.target=void\ startAddTrack()
+comment6.params=
+comment6.target=void\ startFindCD()
+comment7.params=cd
+comment7.target=void\ printCD(model.CD)
+comment8.params=
+comment8.target=void\ pause()
+numComments=9

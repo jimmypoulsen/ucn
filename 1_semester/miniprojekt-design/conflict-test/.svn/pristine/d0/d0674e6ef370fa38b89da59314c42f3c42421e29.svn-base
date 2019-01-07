@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=CDCollection
+comment0.text=\r\n\ Collection\ of\ CDs\r\n\ \r\n\ @author\ FEN,\ KBH,\ MARS,\ KBHA,\ KNOL,\ MHI\ \r\n\ @version\ 2003.10.27,\ 2005.02.23,\ 2005.09.20,\ 2009.09.29,\ 2012.04.10,\ 2015.11.01,\ 2018.10.19\r\n
+comment1.params=
+comment1.target=CDCollection()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CDCollection\r\n\ implemented\ as\ a\ singelton\r\n
+comment2.params=
+comment2.target=CDCollection\ getInstance()
+comment3.params=cd
+comment3.target=void\ addCD(CD)
+comment4.params=
+comment4.target=void\ printCD()
+comment5.params=title
+comment5.target=void\ removeByTitle(java.lang.String)
+comment6.params=title
+comment6.target=CD\ findByTitle(java.lang.String)
+numComments=7

@@ -1,0 +1,34 @@
+package Models;
+
+import java.util.HashMap;
+
+public class OrderContainer {
+   private static OrderContainer instance = null;
+   private HashMap<Integer, Order> orders;
+
+   private OrderContainer() {
+       orders = new HashMap<>();
+   }
+   
+   public static OrderContainer getInstance() {
+       if(instance == null) {
+           instance = new OrderContainer();
+       } 
+       return instance;
+   }
+   
+   //Returnerer value - Her er o value.
+   public Order addOrder(Order o) {
+       return orders.put(o.getOrderId(), o);
+   }
+   
+   public int getLastOrderId() {
+       int res = 0;
+       Order o;
+       if (!orders.isEmpty()) {
+           o = orders.get(orders.size());
+           res = o.getOrderId();
+       }
+       return res;
+   }
+}

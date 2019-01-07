@@ -1,0 +1,17 @@
+package Controllers;
+
+import Models.*;
+
+public class BranchController {
+    
+    public Branch createBranch(String name, String address, int zip, String city, String phone) {
+        Address a = new Address(address, zip, city);
+        Branch b = BranchContainer.getInstance().addBranch(new Branch(name, a, phone));
+        return b;
+    }
+    
+    public Branch addEmployee(Branch b, Employee e) {
+    
+    }
+    
+}

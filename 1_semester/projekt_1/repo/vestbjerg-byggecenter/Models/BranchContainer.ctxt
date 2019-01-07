@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=BranchContainer
+comment1.params=
+comment1.target=BranchContainer()
+comment2.params=
+comment2.target=BranchContainer\ getInstance()
+comment3.params=b
+comment3.target=Branch\ addBranch(Branch)
+comment4.params=b\ e
+comment4.target=void\ addEmployee(Branch,\ Employee)
+comment5.params=b\ l
+comment5.target=void\ addLocation(Branch,\ Location)
+comment6.params=name
+comment6.target=Branch\ findBranch(java.lang.String)
+numComments=7

@@ -1,0 +1,85 @@
+package Controllers;
+
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.util.*;
+import Models.*;
+
+public class OrderControllerTest {
+    private OrderController oCtrl;
+    private CustomerController cCtrl;
+    private CompanyController coCtrl;
+    private EmployeeController eCtrl;
+    private BranchController bCtrl;
+    private LocationController lCtrl;
+    private ItemController iCtrl;
+    private Customer customer;
+    private Company company;
+    private Branch branch;
+    private Location location;
+    private Employee employee;
+    private Order order;
+    private Item item;
+    
+    
+    /**
+     * Default constructor for test class OrderControllerTest
+     */
+    public OrderControllerTest()
+    {
+    }
+
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp() {
+        oCtrl = new OrderController();
+        eCtrl = new EmployeeController();
+        bCtrl = new BranchController();
+        lCtrl = new LocationController();
+        iCtrl = new ItemController();
+        cCtrl = new CustomerController();
+        coCtrl = new CompanyController();
+    
+        Customer customer = cCtrl.createCustomer("Kongen", "Kongesen", "1234567890", "12345678", "Havvej", "Havby", 8000, "Erhverv");
+        Company company = coCtrl.createCompany("UCN",1234567890, "Vejen", 9000, "Aalborg", customer);
+        cCtrl.setCompany(customer, company);
+        Branch branch = bCtrl.createBranch("Tømmerhandel", "Kongevej 1", 9220, "Aalborg Øst", "22222222");
+        Location location = lCtrl.createLocation("Værktøj", 2, branch);
+        Employee employee = eCtrl.createEmployee("Knægt", "Knægtessen", "2828282828", "31337135", "Langagervej 4", 9220, "Aalborg Øst", "dengodekode123", "Master of Disaster", "Direktør");
+        bCtrl.addLocation(branch.getName(), location);
+        bCtrl.addEmployee(branch.getName(), employee);
+        item = iCtrl.createItem(location, "123456", "Damprenser", "Gør rent nemt", 500, 10, 5, 15, 5, true);
+        order = oCtrl.newOrder(cCtrl.getCustomer(1));
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+    
+    @Test
+    public void testNewOrder() {
+        assertEquals("Kongen", order.getCustomer().getFirstName());
+        assertEquals("UCN", order.getCustomer().getCompany().getName());
+    }
+    
+    @Test
+    public void testCreateOrder() {
+        order = oCtrl.createOrderLine(order, item, 2);
+        order = oCtrl.createOrder(order, PaymentType.CASH);
+        
+        assertNotNull(order);
+        assertEquals(order.getTotal(), 1000, 0.0002); // actual, expected, delta (maximum difference between actual and expected
+    }
+}

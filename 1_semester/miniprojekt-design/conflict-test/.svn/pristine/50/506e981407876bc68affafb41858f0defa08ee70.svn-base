@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TextOptions
+comment0.text=\r\n\ Description\ of\ TextOptions\ goes\ here.\r\n\ \r\n\ @author\ knol,\ mhi\r\n\ @version\ 2018.10.19\r\n
+comment1.params=title\ cancelText
+comment1.target=TextOptions(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ TextOptions\r\n
+comment2.params=title
+comment2.target=TextOptions(java.lang.String)
+comment3.params=option
+comment3.target=void\ addOption(java.lang.String)
+comment4.params=
+comment4.target=int\ prompt()
+numComments=5

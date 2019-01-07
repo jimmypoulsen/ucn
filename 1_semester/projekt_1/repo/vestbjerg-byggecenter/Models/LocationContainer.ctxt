@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LocationContainer
+comment1.params=
+comment1.target=LocationContainer()
+comment2.params=
+comment2.target=LocationContainer\ getInstance()
+comment3.params=l
+comment3.target=Location\ addLocation(Location)
+numComments=4

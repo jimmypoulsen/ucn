@@ -1,0 +1,44 @@
+.navigation {
+  background-color: #3498db;
+  margin-bottom: 25px;
+}
+
+.topics {
+  display: flex;
+  justify-content: space-between;
+}
+.topics a,
+.topics a:hover,
+.topics a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.toggleNavigationButton {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .topics {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .container {
+    width: auto;
+    padding: 5px;
+  }
+
+  .toggleNavigationButton {
+    display: block;
+  }
+}

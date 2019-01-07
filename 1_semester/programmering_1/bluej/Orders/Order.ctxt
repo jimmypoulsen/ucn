@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Order
+comment0.text=\n\ Write\ a\ description\ of\ class\ Order\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=number\ orderDate\ delivery
+comment1.target=Order(int,\ java.lang.String,\ java.lang.String)
+comment2.params=orderLine
+comment2.target=void\ setOrderLine(OrderLine)
+comment3.params=
+comment3.target=void\ completeOrder()
+numComments=4

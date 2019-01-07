@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Text
+comment1.params=
+comment1.target=Text()
+comment2.params=
+comment2.target=Text\ getInstance()
+comment3.params=s
+comment3.target=java.lang.String\ stringify(java.lang.String)
+numComments=4

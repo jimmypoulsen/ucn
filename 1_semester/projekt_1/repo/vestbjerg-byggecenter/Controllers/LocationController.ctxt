@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=LocationController
+comment1.params=department\ shelfNo\ b
+comment1.target=Models.Location\ createLocation(java.lang.String,\ int,\ Models.Branch)
+numComments=2

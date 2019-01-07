@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ItemController
+comment1.params=l\ barcode\ name\ description\ price\ stock\ minStock\ maxStock\ kolli\ lendable
+comment1.target=Models.Item\ createItem(Models.Location,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int,\ int,\ boolean)
+comment2.params=l
+comment2.target=Models.Item\ newItem(Models.Location)
+comment3.params=barcode
+comment3.target=Models.Item\ getItem(java.lang.String)
+numComments=4

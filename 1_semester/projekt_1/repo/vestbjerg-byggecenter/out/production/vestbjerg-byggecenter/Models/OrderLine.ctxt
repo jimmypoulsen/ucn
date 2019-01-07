@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=OrderLine
+comment1.params=item\ quantity
+comment1.target=OrderLine(Item,\ int)
+comment2.params=
+comment2.target=Item\ getItem()
+comment3.params=item
+comment3.target=void\ setItem(Item)
+comment4.params=
+comment4.target=int\ getQuantity()
+comment5.params=quantity
+comment5.target=void\ setQuantity(int)
+comment6.params=
+comment6.target=double\ getSubtotal()
+comment7.params=subtotal
+comment7.target=void\ setSubtotal(double)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

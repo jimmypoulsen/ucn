@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=OrderLine
+comment0.text=\n\ Write\ a\ description\ of\ class\ OrderLine\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=quantity\ order\ product
+comment1.target=OrderLine(int,\ Order,\ Product)
+numComments=2

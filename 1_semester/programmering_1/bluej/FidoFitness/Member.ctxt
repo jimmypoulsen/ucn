@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Member
+comment1.params=name\ phone\ email
+comment1.target=Member(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=dog
+comment2.target=void\ setDog(Dog)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=
+comment4.target=boolean\ hasDog()
+numComments=5

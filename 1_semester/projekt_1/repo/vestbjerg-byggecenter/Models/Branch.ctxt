@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Branch
+comment1.params=name\ address\ phone
+comment1.target=Branch(java.lang.String,\ Address,\ java.lang.String)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=e
+comment2.target=boolean\ addEmployee(Employee)
+comment3.params=l
+comment3.target=boolean\ addLocation(Location)
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment5.params=name
+comment5.target=void\ setName(java.lang.String)
+comment6.params=
+comment6.target=Address\ getAddress()
+comment7.params=address
+comment7.target=void\ setAddress(Address)
+comment8.params=
+comment8.target=java.lang.String\ getPhone()
+comment9.params=phone
+comment9.target=void\ setPhone(java.lang.String)
+numComments=11

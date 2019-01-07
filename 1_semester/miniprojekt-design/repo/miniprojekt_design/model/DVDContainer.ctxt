@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DVDContainer
+comment1.params=
+comment1.target=DVDContainer()
+comment2.params=
+comment2.target=DVDContainer\ getInstance()
+comment3.params=d
+comment3.target=boolean\ addDVD(DVD)
+comment4.params=barcode
+comment4.target=DVD\ findDVD(java.lang.String)
+comment5.params=barcode
+comment5.target=DVD\ deleteDVD(java.lang.String)
+numComments=6

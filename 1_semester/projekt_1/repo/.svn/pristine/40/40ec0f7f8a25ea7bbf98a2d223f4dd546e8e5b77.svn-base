@@ -1,0 +1,19 @@
+package Controllers;
+
+import Models.*;
+
+public class CustomerController {
+    public Customer createCustomer(String firstName, String lastName, long cpr, int phone, String address, String city, int zip, String type) {
+        int customerNo = CustomerContainer.getInstance().getLastCustomerNo();
+        Customer c = new Customer(firstName, lastName, cpr, phone, address, city, zip, customerNo, type);
+        CustomerContainer.getInstance().addCustomer(c);
+        return c;
+    }
+    
+    public boolean setCompany(Customer c, Company co) {
+        CustomerContainer.getInstance().setCompany(c, co);
+        return true;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+package Controllers;
+
+import Models.*;
+
+public class EmployeeController {
+    public Employee createEmployee(String firstName, String lastName, long cpr, int phone, String address, int zip, String city, String accessLevel, String title) {
+        Address a = new Address(address, zip, city);
+        int employeeNo = EmployeeContainer.getInstance().getLastEmployeeNo();
+        Employee e = new Employee(firstName, lastName, cpr, phone, address, zip, city, employeeNo, accessLevel, title);
+        e = EmployeeContainer.getInstance().addEmployee(e);
+        return e;
+    }
+    
+    public boolean changeBranch(Employee e, Branch b) {
+        return EmployeeContainer.getInstance().setBranch(e, b);
+    }
+}

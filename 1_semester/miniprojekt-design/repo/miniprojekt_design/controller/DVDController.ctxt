@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=DVDController
+comment1.params=barcode\ title\ artist\ publicationDate
+comment1.target=model.DVD\ createDVD(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=barcode
+comment2.target=model.DVD\ getDVD(java.lang.String)
+comment3.params=d\ barcode\ title\ artist\ publicationDate
+comment3.target=model.DVD\ updateDVD(model.DVD,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=d
+comment4.target=model.DVD\ deleteDVD(model.DVD)
+numComments=5

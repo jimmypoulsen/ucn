@@ -1,0 +1,18 @@
+package Models;
+import java.util.HashMap;
+
+public class ItemContainer {
+    private static ItemContainer instance = null;
+    private HashMap<Integer, Item> items;
+
+    public ItemContainer() {
+        items = new HashMap<>();
+    }
+
+    public ItemContainer getInstance() {
+        if(instance == null) {
+            instance = new ItemContainer();
+        }
+        return instance;
+    }
+}

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Location
+comment1.params=department\ shelfNo\ branch
+comment1.target=Location(java.lang.String,\ int,\ Branch)
+comment2.params=department
+comment2.target=void\ setDepartment(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getDepartment()
+comment4.params=shelfNo
+comment4.target=void\ setShelfNo(int)
+comment5.params=
+comment5.target=int\ getShelfNo()
+comment6.params=b
+comment6.target=void\ setBranch(Branch)
+comment7.params=
+comment7.target=Branch\ getBranch()
+numComments=8

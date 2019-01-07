@@ -1,0 +1,87 @@
+package TUI;
+
+import Controllers.*;
+import Models.*;
+
+public class MainMenuUI {
+    
+    public static void main(String args[]) {
+        new MainMenuUI().start();
+    }
+    
+    private void start() {
+        testMe();
+        boolean run = true;
+        while(run) {
+            String command = Helper.readInput("What is your command?");
+            switch(command.toLowerCase()) {
+                case "exit":
+                case "quit":
+                case "q":
+                    run = false;
+                    break;
+                case "create order":
+                    createOrder();
+                    break;
+                
+                
+            }
+        }
+    }
+    
+    private void createOrder() {
+        CustomerController cCtrl = new CustomerController();
+        OrderController oCtrl = new OrderController();
+        ItemController iCtrl = new ItemController();
+        int customerNo = Helper.readInt("Enter customer number");
+        Customer c = cCtrl.getCustomer(customerNo);
+        System.out.println("Customer selected:\n" + c);
+        
+        Order o = oCtrl.newOrder(c);
+        
+        boolean run = true;
+        while(run) {
+            String barcode = Helper.readInput("Enter barcode");
+            switch(barcode.toLowerCase()) {
+                case ":done":
+                    //
+                    break;
+                case default:
+                    try {
+                        Item i = 
+                    }    
+                    break;
+            }    
+        }
+        
+    }
+    
+    public void testMe() {
+        EmployeeController eCtrl = new EmployeeController();
+        BranchController bCtrl = new BranchController();
+        LocationController lCtrl = new LocationController();
+        
+        Employee e = eCtrl.createEmployee("Jimmy", "Poulsen", "2812961295", "31337135", "Langagervej 4", 9220, "Aalborg Øst", "Master of Disaster", "Direktør");
+        Employee ea = eCtrl.createEmployee("Kongen", "Poulsen", "2812961295", "31337135", "Langagervej 4", 9220, "Aalborg Øst", "Master of Disaster", "Direktør");
+        Employee eb = eCtrl.createEmployee("Dronningen", "Poulsen", "2812961295", "31337135", "Langagervej 4", 9220, "Aalborg Øst", "Master of Disaster", "Direktør");
+        Branch b = bCtrl.createBranch("Afdeling Q", "Sejvej 1", 9000, "Aalborg", "22222222");
+        Location l = lCtrl.createLocation("Department A", 1, b);
+
+        bCtrl.addEmployee("Afdeling Q", e);
+        bCtrl.addEmployee("Afdeling Q", ea);
+        bCtrl.addEmployee("Afdeling Q", eb);
+        bCtrl.addLocation("Afdeling Q", l);
+        
+        CustomerController cCtrl = new CustomerController();
+        CompanyController coCtrl = new CompanyController();
+    
+        Customer c = cCtrl.createCustomer("Kongen", "Kongesen", "1234567890", "12345678", "Havvej", "Havby", 8000, "Erhverv");
+        Company co = coCtrl.createCompany("UCN",1234567890, "Vejen", 9000, "Aalborg", c);
+        cCtrl.setCompany(c, co);
+        
+        Item i = new Item("1234567890123", "Damprenser", "Gør rent nemt", 1000, 10, 5, 15, 5, true);
+
+    }
+    
+  
+}

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SessionsController
+comment1.params=customerNo\ password
+comment1.target=boolean\ loginEmployee(int,\ java.lang.String)
+comment2.params=
+comment2.target=Models.Employee\ getCurrentLoggedInEmployee()
+numComments=3

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Track
+comment0.text=\r\n\ Music\ track\r\n\ \r\n\ @author\ fen,\ mars,\ knol,\ mhi\r\n\ @version\ 2003.10.27,\ 2009.29.09,\ 2015.11.01,\ 2018.10.19\r\n
+comment1.params=title\ length
+comment1.target=Track(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nummer\r\n
+comment2.params=
+comment2.target=int\ getLength()
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+numComments=4

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=EmployeeContainer
+comment1.params=
+comment1.target=EmployeeContainer()
+comment2.params=
+comment2.target=EmployeeContainer\ getInstance()
+comment3.params=e
+comment3.target=Employee\ addEmployee(Employee)
+comment4.params=customerNo\ password
+comment4.target=boolean\ performLogin(int,\ java.lang.String)
+comment5.params=
+comment5.target=Employee\ findCurrentLoggedInEmployee()
+comment6.params=e\ b
+comment6.target=boolean\ setBranch(Employee,\ Branch)
+comment7.params=
+comment7.target=int\ getLastEmployeeNo()
+numComments=8

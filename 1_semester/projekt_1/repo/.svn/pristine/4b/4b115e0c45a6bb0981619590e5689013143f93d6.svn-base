@@ -1,0 +1,21 @@
+package Controllers;
+
+import Models.*;
+
+public class OrderController {
+    public Order createOrder(Order o, PaymentType pt) {
+        o.setPaymentType(pt);
+        o.setDelivery(true);
+        o.setState(OrderState.COMPLETED);
+        OrderContainer.getInstance().addOrder(o);
+        return o;
+    }
+    
+    public Order newOrder(Customer c) {
+        Employee e = new Employee("Kongen", "Kongesen", "1234567890", "12345678", "Havvej", 8000, "Havby", 1, "Admin", "Manager");
+        int id = OrderContainer.getInstance().getLastOrderId() + 1;
+        Order o = new Order(id, OrderState.PENDING, c, e);
+        return o;
+    }
+}
+

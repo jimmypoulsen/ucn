@@ -1,0 +1,28 @@
+package tui;
+
+import java.util.Scanner;
+
+public final class Helper {
+  private Helper() {
+    throw new UnsupportedOperationException();
+  }
+
+  public static String readInput(String question) {
+    System.out.print(question + ": ");
+    Scanner s = new Scanner(System.in);
+    return s.nextLine();
+  }
+
+  public static int readInt(String question) {
+    System.out.print(question + ": ");
+    Scanner s = new Scanner(System.in);
+    return s.nextInt();
+  }
+
+  public static boolean checkEmptyInput(String input) {
+    boolean res = false;
+    if(input.equals("") || input.equals(" "))
+      res = true;
+    return res;
+  }
+}

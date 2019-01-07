@@ -1,0 +1,48 @@
+package model;
+
+
+public class Loan   {
+    private int id;
+    private String borrowDate;
+    private String period;
+    private boolean status;
+    
+    public Loan(int id, String borrowDate, String period, boolean status) {
+        this.id = id;
+        this.borrowDate = borrowDate;
+        this.period = period;
+        this.status = status;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public void setBorrowDate(String borrowDate) {
+        this.borrowDate = borrowDate;
+    }
+    
+    public String getBorrowDate() {
+        return borrowDate;
+    }
+    
+    public void setPeriod(String period) {
+        this.period = period;
+    }
+    
+    public String getPeriod() {
+        return period;
+    }
+    
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+    
+    public boolean getStatus() {
+        return status;
+    }
+}

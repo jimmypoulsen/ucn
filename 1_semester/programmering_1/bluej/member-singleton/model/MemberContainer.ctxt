@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MemberContainer
+comment1.params=
+comment1.target=MemberContainer()
+comment2.params=
+comment2.target=MemberContainer\ getInstance()
+comment3.params=m
+comment3.target=boolean\ addMember(Member)
+comment4.params=
+comment4.target=java.util.ArrayList\ findAll()
+numComments=5

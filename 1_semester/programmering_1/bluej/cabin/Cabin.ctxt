@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Cabin
+comment0.text=\n\ Write\ a\ description\ of\ class\ Cabin\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=id\ address\ postalCode\ city
+comment1.target=Cabin(int,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=noOfBeds
+comment2.target=void\ setNoOfBeds(int)
+comment3.params=buildinYear
+comment3.target=void\ setBuildinYear(int)
+comment4.params=numberOfPersons\ numberOfDays
+comment4.target=int\ calculatePrice(int,\ int)
+numComments=5

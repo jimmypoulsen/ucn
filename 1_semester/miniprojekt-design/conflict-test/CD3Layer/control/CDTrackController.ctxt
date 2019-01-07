@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CDTrackController
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CDHandling\ here.\r\n\ \r\n\ @author\ KNOL,\ MHI\ \r\n\ @version\ 2018.10.19\r\n
+comment1.params=
+comment1.target=CDTrackController()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CDHandling\r\n
+comment2.params=title
+comment2.target=model.CD\ findCDByTitle(java.lang.String)
+comment3.params=nr\ title
+comment3.target=void\ createCD(int,\ java.lang.String)
+comment4.params=cdTitle\ track\ length
+comment4.target=boolean\ addTrack(java.lang.String,\ java.lang.String,\ int)
+numComments=5

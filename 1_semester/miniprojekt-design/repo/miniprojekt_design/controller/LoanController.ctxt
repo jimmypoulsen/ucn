@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LoanController
+comment1.params=p\ borrowDate\ period
+comment1.target=model.Loan\ createLoan(model.Person,\ java.time.LocalDateTime,\ java.lang.String)
+comment2.params=id
+comment2.target=model.Loan\ getLoan(int)
+comment3.params=l
+comment3.target=model.Loan\ deleteLoan(model.Loan)
+comment4.params=l
+comment4.target=boolean\ activateLoan(model.Loan)
+comment5.params=l
+comment5.target=boolean\ deactivateLoan(model.Loan)
+numComments=6

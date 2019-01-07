@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=DVDCopy
+comment1.params=serialNo\ purchaseDate\ purchasePrice\ dvd
+comment1.target=DVDCopy(java.lang.String,\ java.lang.String,\ java.lang.String,\ DVD)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.lang.String\ getSerialNo()
+comment3.params=serialNo
+comment3.target=void\ setSerialNo(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getPurchaseDate()
+comment5.params=purchaseDate
+comment5.target=void\ setPurchaseDate(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getPurchasePrice()
+comment7.params=purchasePrice
+comment7.target=void\ setPurchasePrice(java.lang.String)
+comment8.params=
+comment8.target=DVD\ getDvd()
+comment9.params=dvd
+comment9.target=void\ setDvd(DVD)
+numComments=11

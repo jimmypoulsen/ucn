@@ -1,0 +1,49 @@
+package Models;
+import java.util.*;
+
+public class Branch {
+    private String name;
+    private Address address;
+    private String phone;
+    private HashSet<Employee> employees;
+    private HashSet<Location> locations;
+
+    public Branch(String name, Address address, String phone) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.locations = new HashSet<Location>();
+    }
+
+    public boolean addEmployee(Employee employee) {
+        return this.employees.add(employee);
+    }
+
+    public boolean addLocation(Location location) {
+        return this.locations.add(location);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+}

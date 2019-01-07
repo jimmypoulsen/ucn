@@ -1,0 +1,29 @@
+.product {
+  width: 250px;
+  border: 1px solid #058eff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product__name {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.product__price {
+  font-size: 16px;
+  padding: 5px;
+}
+
+button.product__add-to-cart {
+  padding: 16px 16px 16px 16px;
+  border: none;
+  border-top: 1px solid #058eff;
+  color: #292929;
+  width: 100%;
+  font-size: 14px;
+}
+button.product__add-to-cart:hover {
+  background-color: #058eff;
+  color: #f1f1f1;
+}

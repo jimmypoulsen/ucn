@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CompanyContainer
+comment1.params=
+comment1.target=CompanyContainer()
+comment2.params=
+comment2.target=CompanyContainer\ getInstance()
+comment3.params=co
+comment3.target=Company\ addCompany(Company)
+numComments=4

@@ -1,0 +1,42 @@
+package Models;
+
+import java.util.HashMap;
+
+public class EmployeeContainer {
+   private static EmployeeContainer instance = null;
+   private HashMap<Integer, Employee> employees;
+
+   private EmployeeContainer() {
+        employees = new HashMap<>();
+   }
+    
+   public static EmployeeContainer getInstance() {
+       if(instance == null) {
+           instance = new EmployeeContainer();
+       } 
+       return instance;
+   }    
+
+   public Employee addEmployee(Employee e) {
+       employees.put(e.getEmployeeNo(), e);
+       return e;
+   }
+   
+   public boolean setBranch(Employee e, Branch b) {
+        Employee temp = employees.get(e.getEmployeeNo());         
+        temp.setBranch(b);
+        employees.replace(e.getEmployeeNo(), temp);
+        return true;
+    }
+   
+   
+   public int getLastEmployeeNo() {
+       int res = 0;
+       Employee e;
+       if (!employees.isEmpty()) {
+           e = employees.get(employees.size());
+           res = e.getEmployeeNo();
+       }
+       return res;
+   }
+}

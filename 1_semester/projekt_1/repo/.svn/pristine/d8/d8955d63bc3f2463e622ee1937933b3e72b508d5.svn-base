@@ -1,0 +1,27 @@
+package TUI;
+
+import Controllers.*;
+import Models.*;
+
+public class Test {
+    
+    public void test() {
+    OrderController oCtrl = new OrderController();
+    //Customer c, PaymentType pt, boolean delivery)
+    CustomerController cCtrl = new CustomerController();
+    CompanyController coCtrl = new CompanyController();
+
+    Customer c = cCtrl.createCustomer("Kongen", "Kongesen", 1234567890, 12345678, "Havvej", "Havby", 8000, "Erhverv");
+    Company co = coCtrl.createCompany("UCN",1234567890, "Vejen", 9000, "Aalborg", c);
+    cCtrl.setCompany(c, co);
+    Order o = oCtrl.createOrder(c, PaymentType.INVOICE);
+    Item i = new Item("1234567890123", "Damprenser", "Gør rent nemt", 1000, 10, 5, 15, 5, true);
+    o.addOrderLine(new OrderLine(i, 2));
+    
+    System.out.println(o + "\n");
+    System.out.print(c + "\n");
+    System.out.print(co + "\n");
+    //String firstName, String lastName, long cpr, int phone, String address, String city, int zip, String type, Company company
+    
+    }
+}
